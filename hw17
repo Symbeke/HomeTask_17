@@ -1,0 +1,11 @@
+let length = 30;
+function generateUID(length) {
+    let array = '0123456789abcdefghijklmnopqrstuvwxyz0123456789';
+    let id = '';
+    for(let i = 0; i < length; i++) {
+        id += array[Math.floor(Math.random() * (array.length - 1))];
+    }
+    return id;
+}
+
+console.log(generateUID(length));
